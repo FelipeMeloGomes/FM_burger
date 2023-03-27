@@ -10,7 +10,7 @@ Uma Loja fictícia de Hamburguês. <br/>
 <br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/FelipeMelogomes/Projeto-Burguer-Vuejs/main/Fmburger.png" width="100%">
+  <img src="https://github.com/FelipeMelogomes/Fmburger/blob/main/preview.png" width="100%">
 </p>
 
 
