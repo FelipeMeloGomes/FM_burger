@@ -53,7 +53,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-<a target="_blank" href="https://imgur.com/a/sxZcm6s">Confira o Layout aqui.</a>
+<a :target="_blank" href="https://imgur.com/a/sxZcm6s">Confira o Layout aqui.</a>
 
 
 
