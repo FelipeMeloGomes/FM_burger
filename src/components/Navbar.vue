@@ -11,8 +11,8 @@
 </template>
 <script>
 export default {
-  name: 'Navbar',
-  props: ['logo', 'alt'],
+  name: "Navbar",
+  props: ["logo", "alt"],
 };
 </script>
 <style scoped>

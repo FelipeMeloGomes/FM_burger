@@ -50,10 +50,10 @@
 </template>
 
 <script>
-import Message from './Message.vue';
+import Message from "./Message.vue";
 
 export default {
-  name: 'Dashboard',
+  name: "Dashboard",
   data() {
     return {
       burgers: null,
@@ -67,7 +67,7 @@ export default {
   },
   methods: {
     async getPedidos() {
-      const req = await fetch('http://localhost:3000/burgers');
+      const req = await fetch("http://localhost:3000/burgers");
 
       const data = await req.json();
 
@@ -77,7 +77,7 @@ export default {
       this.getStatus();
     },
     async getStatus() {
-      const req = await fetch('http://localhost:3000/status');
+      const req = await fetch("http://localhost:3000/status");
 
       const data = await req.json();
 
@@ -85,7 +85,7 @@ export default {
     },
     async deleteBurger(id) {
       const req = await fetch(`http://localhost:3000/burgers/${id}`, {
-        method: 'DELETE',
+        method: "DELETE",
       });
 
       const res = await req.json();
@@ -94,7 +94,7 @@ export default {
       this.msg = `Pedido foi removido com sucesso!`;
 
       // limpar msg
-      setTimeout(() => (this.msg = ''), 3000);
+      setTimeout(() => (this.msg = ""), 3000);
 
       this.getPedidos();
     },
@@ -104,8 +104,8 @@ export default {
       const dataJson = JSON.stringify({ status: option });
 
       const req = await fetch(`http://localhost:3000/burgers/${id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
         body: dataJson,
       });
 
@@ -115,7 +115,7 @@ export default {
       this.msg = `O pedido Nº ${res.id} foi atualizado para ${res.status}!`;
 
       // limpar msg
-      setTimeout(() => (this.msg = ''), 3000);
+      setTimeout(() => (this.msg = ""), 3000);
 
       console.log(res);
     },
