@@ -1,5 +1,6 @@
 
 /dist
+/node_modules
 readme_img
 
 
@@ -21,3 +22,4 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+node_modules
