@@ -54,7 +54,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## ✔ Atualizações
 
-Melhorias implementadas:
+Melhorias do projeto:
 
 - Adição de novas carnes e molhos.
 - Implementação de um verificação nos inputs.
