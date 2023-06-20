@@ -34,30 +34,27 @@ npm run backend
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-* HTML e CSS.
-* JavaScript.
-* Vuejs.
+-   HTML e CSS.
+-   JavaScript.
+-   Vuejs.
 
 ## 📚 Conceitos aprendidos no projeto
 
-* Front-end
-* Gerenciador de Pacotes (NPM).
-* JSON.
-* Responsividade.
-* Criação de componentes e reutilização.
-* Framework Vuejs.
+-   Front-end
+-   Gerenciador de Pacotes (NPM).
+-   JSON.
+-   Responsividade.
+-   Criação de componentes e reutilização.
+-   Framework Vuejs.
 
 ## 🔖 Layout
 
 <a href="https://imgur.com/a/sxZcm6s" target="_blank">Confira o Layout aqui.</a>
 
-
 ## ✔ Atualizações
 
 Melhorias do projeto:
 
-* Adição de novas carnes e molhos.
-* Implementação de um verificação nos inputs.
-* Melhorias na responsividade.
-
----
+-   Adição de novas carnes e molhos.
+-   Implementação de um verificação nos inputs.
+-   Melhorias na responsividade.
