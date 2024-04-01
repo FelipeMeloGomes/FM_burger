@@ -151,7 +151,7 @@ export default {
 
 <style scoped>
 #burger-form {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -172,7 +172,7 @@ label {
 input,
 select {
     padding: 5px 10px;
-    width: 300px;
+    width: 100%;
 }
 
 #opcionais-container {
@@ -218,43 +218,10 @@ select {
     color: #222;
 }
 
-#botao {
-    margin-right: 100%;
-}
-
-@media (max-width: 450px) {
+@media screen and (max-width: 600px) {
     #burger-form {
-        max-width: none;
-    }
-
-    #botao {
-        width: 100%;
-    }
-
-    input,
-    select {
-        width: 100%;
-    }
-
-    .submit-btn {
-        background-color: #222;
-        color: #fcba03;
-        font-weight: bold;
-        border: 2px solid #222;
-        padding: 10px;
-        font-size: 16px;
+        max-width: 90%;
         margin: 0 auto;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-
-    #opcionais-title {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-
-    .checkbox-container {
-        width: 100%;
     }
 }
 </style>
