@@ -3,12 +3,12 @@
         <Message :msg="msg" v-show="msg" />
         <div>
             <div id="burger-table-heading">
-                <div class="order-id">#:</div>
-                <div>Cliente:</div>
-                <div>Pão:</div>
-                <div>Carne:</div>
-                <div>Opcionais:</div>
-                <div>Ações:</div>
+                <div class="order-id">#</div>
+                <div>Cliente</div>
+                <div>Pão</div>
+                <div>Carne</div>
+                <div>Opcionais</div>
+                <div>Ações</div>
             </div>
         </div>
         <div id="burger-table-rows">
@@ -135,7 +135,10 @@ export default {
 
 <style scoped>
 #burger-table {
-    max-width: 75rem;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
     margin: 0 auto;
 }
 
@@ -145,11 +148,13 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-left: 2px;
+    max-width: 100%;
 }
 
 #burger-table-heading {
     font-weight: bold;
     padding: 0.75rem;
+    max-width: 100%;
     border-bottom: 3px solid #333;
 }
 
@@ -172,6 +177,11 @@ export default {
 select {
     padding: 0.75rem 0.375rem;
     margin-right: 0.75rem;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .delete-btn {
@@ -191,19 +201,26 @@ select {
     color: #222;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #burger-table {
         max-width: 100%;
+        width: 100%;
     }
 
     #burger-table-heading div,
     .burger-table-row div {
-        width: 15%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
     }
 
     #burger-table-heading .order-id,
     .burger-table-row .order-number {
-        width: 10%;
+        width: 5%;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        gap: 10px;
     }
 
     #burger-table-heading {
@@ -213,23 +230,6 @@ select {
 
     .burger-table-row {
         margin: 2px;
-    }
-
-    select {
-        padding: 0.5rem 0.25rem;
-        margin-right: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #nav {
-        flex-direction: wrap;
-    }
-
-    #burger-table-heading div,
-    .burger-table-row div {
-        width: 15%;
-        margin-left: 0;
     }
 }
 </style>
